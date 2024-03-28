@@ -1,0 +1,18 @@
+* {
+    --btn-primary: #DADCE0;
+    --btn-secondary: #F1F3F4;
+}
+
+.color1{
+    background-color: var(--btn-primary);
+}
+.color1:hover{
+    background-color: var(--btn-primary);
+}
+
+.color2{
+    background-color: var(--btn-secondary);
+}
+.color2:hover{
+    background-color: var(--btn-secondary);
+}
