@@ -16,18 +16,11 @@ document.addEventListener("DOMContentLoaded", function(){
           const result = eval(convertedValue);
           display.value = result;
           currentValue = result;
+          
         } catch (error) {
             display.value = 'Error';
         }
       }
-    function test1(){
-        const currentValue1 = currentValue;
-const result = eval(currentValue1); // This will result in 18
-console.log(result);
-        // currentValue = 9*2;
-        //     const result = eval(currentValue);
-        //     console.log(result);
-    }
     for(i=0; i<buttons.length; i++){
         const button = buttons[i];
         
@@ -40,23 +33,12 @@ console.log(result);
 
                 }else if(value == "="){
                     test();
-
                 } else {
+                    
                     currentValue += value;
                     display.value = currentValue;
                 }
                 
             });
-
-            // if(buttons[i] = buttons[3] ){
-            //     buttons[3].addEventListener('click', function() {
-            //         currentValue = "0";
-            //         display.value = currentValue;
-            //         currentValue = "";
-
-            //     })
-            // }
-
-        
     }
 });
